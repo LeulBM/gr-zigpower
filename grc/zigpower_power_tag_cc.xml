@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+###################################
+## Power Tagger
+###################################
+-->
+<block>
+  <name>Zigbee Power Tag</name>
+  <key>zigpower_power_tag_cc</key>
+  <category>zigpower</category>
+  <import>import zigpower</import>
+  <make>zigpower.power_tag_cc_impl()</make>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

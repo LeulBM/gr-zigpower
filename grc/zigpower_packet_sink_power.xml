@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+###################################
+## Packet Sink with Power
+###################################
+-->
+<block>
+  <name>Packet Sink with Power</name>
+  <key>zigpower_packet_sink_power</key>
+  <category>zigpower</category>
+  <import>import zigpower</import>
+  <make>zigpower.packet_sink_power($threshold, $rssi)</make>
+
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>RSSI Samples</name>
+    <key>rssi</key>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <nports>1</nports>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>
